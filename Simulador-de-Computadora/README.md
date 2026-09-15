@@ -12,9 +12,9 @@ El objetivo del proyecto es desarrollar en **Python** un simulador funcional de 
 
 Esta versión establece las especificaciones iniciales y los requisitos que deberá cumplir el simulador durante su desarrollo.
 
-🏷️ [Ver Simpletron v1 - Versión Base](https://github.com/hugocampos-upaep/Prog_Avaz_26/releases/tag/simpletron-v1)
+🏷️ [Ver Simpletron v1.00 - Versión Base](https://github.com/hugocampos-upaep/Prog_Avaz_26/releases/tag/simpletron)
 
-📦 [Ver todas las versiones](https://github.com/hugocampos-upaep/Prog_Avaz_26/releases)
+📦 [Ver todas las versiones](https://github.com/hugocampos-upaep/TDC202-11_2026/releases)
 
 ---
 
