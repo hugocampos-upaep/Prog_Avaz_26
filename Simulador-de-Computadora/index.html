@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simpletron - Simulador de Computadora</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Un Simulador de Computadora</h1>
+        <h2>Simpletron</h2>
+        <p>Versión Base</p>
+    </header>
+
+    <hr>
+
+    <main>
+
+        <section>
+            <h2>Planteamiento del proyecto</h2>
+
+            <p>
+                El proyecto consiste en desarrollar en Python un simulador
+                funcional de una computadora llamada Simpletron.
+            </p>
+
+            <p>
+                El simulador permitirá cargar y ejecutar programas escritos
+                en Simpletron Machine Language (SML), simulando el funcionamiento
+                básico de la memoria, los registros y la ejecución de instrucciones.
+            </p>
+        </section>
+
+
+        <section>
+            <h2>Memoria</h2>
+
+            <p>
+                Simpletron contará con una memoria de 100 posiciones,
+                numeradas desde 00 hasta 99.
+            </p>
+
+            <p>
+                En Python la memoria será representada mediante una lista:
+            </p>
+
+            <pre>
+memory = [0] * 100
+            </pre>
+
+            <p>
+                Cada posición podrá contener una instrucción SML o un dato.
+            </p>
+        </section>
+
+
+        <section>
+            <h2>Carga del programa</h2>
+
+            <p>
+                Las instrucciones SML serán introducidas por el usuario una
+                por una y almacenadas en la memoria.
+            </p>
+
+            <p>
+                El valor 9999 indicará que ha terminado la fase de carga.
+            </p>
+
+            <p>
+                Los valores ingresados deberán encontrarse dentro del rango
+                permitido por Simpletron.
+            </p>
+        </section>
+
+
+        <section>
+            <h2>Registros</h2>
+
+            <p>
+                Para simular el funcionamiento de la computadora se utilizarán
+                los siguientes registros:
+            </p>
+
+            <ul>
+                <li>accumulator</li>
+                <li>instructionCounter</li>
+                <li>instructionRegister</li>
+                <li>operationCode</li>
+                <li>operand</li>
+            </ul>
+
+            <p>
+                Todos los registros comenzarán con un valor de cero.
+            </p>
+        </section>
+
+
+        <section>
+            <h2>Ciclo de ejecución</h2>
+
+            <p>
+                La ejecución comenzará en la posición 00 de la memoria.
+                Simpletron obtendrá la instrucción correspondiente y la
+                almacenará en el registro de instrucciones.
+            </p>
+
+            <p>
+                Posteriormente, la instrucción será separada en un código de
+                operación y un operando.
+            </p>
+
+            <pre>
+operationCode = instructionRegister // 100
+operand = instructionRegister % 100
+            </pre>
+        </section>
+
+
+        <section>
+            <h2>Operaciones SML</h2>
+
+            <p>
+                Simpletron deberá implementar las siguientes doce operaciones:
+            </p>
+
+            <table border="1">
+                <tr>
+                    <th>Código</th>
+                    <th>Operación</th>
+                </tr>
+
+                <tr><td>10</td><td>READ</td></tr>
+                <tr><td>11</td><td>WRITE</td></tr>
+                <tr><td>20</td><td>LOAD</td></tr>
+                <tr><td>21</td><td>STORE</td></tr>
+                <tr><td>30</td><td>ADD</td></tr>
+                <tr><td>31</td><td>SUBTRACT</td></tr>
+                <tr><td>32</td><td>DIVIDE</td></tr>
+                <tr><td>33</td><td>MULTIPLY</td></tr>
+                <tr><td>40</td><td>BRANCH</td></tr>
+                <tr><td>41</td><td>BRANCHNEG</td></tr>
+                <tr><td>42</td><td>BRANCHZERO</td></tr>
+                <tr><td>43</td><td>HALT</td></tr>
+            </table>
+        </section>
+
+
+        <section>
+            <h2>Vaciado de memoria</h2>
+
+            <p>
+                Al terminar la ejecución, el simulador deberá mostrar
+                el contenido de los registros y las 100 posiciones de memoria.
+            </p>
+
+            <p>
+                Este procedimiento se conoce como Memory Dump.
+            </p>
+        </section>
+
+
+        <section>
+            <h2>Manejo de errores</h2>
+
+            <p>
+                El simulador deberá detectar errores durante su ejecución,
+                como:
+            </p>
+
+            <ul>
+                <li>División entre cero.</li>
+                <li>Códigos de operación no válidos.</li>
+                <li>Desbordamiento del acumulador.</li>
+                <li>Datos fuera del rango permitido.</li>
+            </ul>
+
+            <p>
+                Cuando ocurra un error fatal, Simpletron deberá detener
+                la ejecución y mostrar el vaciado de memoria.
+            </p>
+        </section>
+
+
+        <section>
+            <h2>Versión Base</h2>
+
+            <p>
+                Esta versión establece los requisitos y la estructura inicial
+                del proyecto. En las siguientes versiones se implementarán
+                progresivamente las funciones necesarias hasta completar
+                el simulador Simpletron.
+            </p>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>Programación Avanzada - Otoño 2026</p>
+        <p>Simpletron - Versión Base</p>
+    </footer>
+
+</body>
+
+</html>
