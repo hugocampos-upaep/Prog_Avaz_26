@@ -1,6 +1,6 @@
 # Programación Avanzada - Otoño 2026
 
-Repositorio destinado a almacenar los proyectos, prácticas y ejercicios desarrollados durante la materia de **Programación Avanzada**.
+Repositorio destinado a almacenar los proyectos, prácticas y ejercicios desarrollados durante la materia de **Programación Avanzada**, otoño 2026.
 
 ## Proyectos
 
