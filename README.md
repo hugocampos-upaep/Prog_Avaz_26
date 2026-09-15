@@ -12,23 +12,12 @@ El proyecto permitirá cargar y ejecutar programas escritos en **Simpletron Mach
 
 📁 [Ver proyecto Simpletron](./Simulador-de-Computadora/)
 
-**Estado:** Versión Base
+**Estado:** EN PROGRESO...
 
 ---
 
 ## Tecnologías
 
 - Python
-- HTML
 - GitHub
 - Simpletron Machine Language (SML)
-
-## Estructura del repositorio
-
-```text
-Prog_Avaz_26/
-│
-├── Simulador-de-Computadora/
-│   └── README.md
-│
-└── README.md
